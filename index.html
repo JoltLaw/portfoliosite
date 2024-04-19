@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/J (1).png" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Josh Lawrence</title>
+  </head>
+  <body>
+    <div class="userNotifBar" id="notifbar">
+      <span class="notifTxt" id="notifTxt">test</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <h2 class="siteTitle">Josh Lawrence</h2>
+      <nav class="headerNav">
+        <a href="#helloWorld" class="navItem">Hello World</a>
+        <a href="#myWork" class="navItem">My Work</a>
+        <a href="#skills" class="navItem">Skills</a>
+        <a href="#contactMeForm" class="navItem">Contact Me</a>
+      </nav>
+    </header>
+    <section class="openingSprawl">
+      <h1 class="openingSprawlTxt">Josh</h1>
+      <h1 class="openingSprawlTxt">Lawrence</h1>
+    </section>
+    <section class="aboutMe" id="helloWorld">
+      <div class="sectionHeaderContainer">
+        <h2 class="sectionHeader">Hello World</h2>
+      </div>
+
+      <div class="txtContainer">
+        <h3 class="txtHeader">About Me</h3>
+        <p>
+          My name is Josh Lawrence, I am a full stack developer and web designer
+          located in Utah. I learnt how to code well going to Tooele Technical
+          college for software development. Currently I am working as a Data
+          Analyst for a major tech company. Recently I have started doing some
+          freelance web development for small companies, and social media
+          accounts.
+        </p>
+
+        <p>
+          In my free time I like to read comic books, watch movies, play D&D,
+          and of course program. Currently in my free time I’m mostly working on
+          a few full stack web apps that I’m hoping to be able to go live with
+          here shortly. If you have any questions for me feel free to reach out
+          using the contact me form at the bottom of this website.
+        </p>
+      </div>
+    </section>
+    <section class="myWork" id="myWork">
+      <div class="workDemo">
+        <h2 class="sectionHeader">My Work</h2>
+        <div class="myWorkTxtContainer">
+          <p>
+            I have some personal apps in the works that aren't ready to be shown
+            off yet, but I'm hoping to have them ready soon!
+          </p>
+
+          <p>
+            If you're interested you can view some of my freelance work at:
+            <a
+              href="https://www.lawrencesoftwarecompany.com/Pages/ourWork.html"
+              target="_blank"
+              >lawrence Software Company</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="sectionHeaderContainer">
+        <h2 class="sectionHeader">Skills</h2>
+      </div>
+      <div class="selectMoreRow">
+        <button
+          class="skillBtn"
+          id="htmlBtn"
+          onclick="selectSkill(htmlBtn)"
+          value="0"
+        >
+          <ion-icon name="logo-html5"></ion-icon>
+        </button>
+        <button
+          class="skillBtn"
+          id="jsBtn"
+          onclick="selectSkill(jsBtn)"
+          value="1"
+        >
+          <ion-icon name="logo-javascript"></ion-icon>
+        </button>
+        <button
+          class="skillBtn"
+          id="reactBtn"
+          onclick="selectSkill(reactBtn)"
+          value="2"
+        >
+          <ion-icon name="logo-react"></ion-icon>
+        </button>
+        <button
+          class="skillBtn"
+          id="otherBtn"
+          onclick="selectSkill(otherBtn)"
+          value="3"
+        >
+          <ion-icon name="analytics-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="aboutSkillContainer" id="aboutSkillContainer"></div>
+    </section>
+    <section class="contactMe" id="contactMeForm">
+      <form id="contactForm" class="contactMeForm">
+        <div class="sectionHeaderContainer">
+          <h2 class="sectionHeader">Contact Me</h2>
+        </div>
+
+        <label for="email" class="inputLabel">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="emailInput"
+          autocomplete="off"
+          autocapitalize="off"
+          class="contactInput"
+        />
+
+        <label for="reason" class="inputLabel">Reason For Contacting Me</label>
+        <input
+          type="text"
+          name="reason"
+          id="reasonInput"
+          autocomplete="off"
+          class="contactInput"
+        />
+
+        <label for="additionalDetails" class="inputLabel"
+          >Additional Details</label
+        >
+        <textarea
+          name="additionalDetails"
+          id="additionalDetailsInput"
+          cols="30"
+          rows="10"
+          class="contactInput"
+        ></textarea>
+        <button type="submit" class="submitContactFormBtn">Send!</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <nav class="footerNav">
+        <a href="#helloWorld" class="navItem">Hello World</a>
+        <a href="#myWork" class="navItem">My Work</a>
+        <a href="#skills" class="navItem">Skills</a>
+        <a href="#contactMe" class="navItem">Contact Me</a>
+      </nav>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+    <script src="./script.js" type="module"></script>
+    <script src="./selectSkills.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
