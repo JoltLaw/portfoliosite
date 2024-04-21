@@ -415,15 +415,22 @@ section:nth-child(odd) {
 @media screen and (max-width: 537px) {
   .openingSprawlTxt {
     font-size: 3.12rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .selectMoreRow {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .skillBtn {
     font-size: 1.95rem;
+    width: min-content;
+    padding: 0;
   }
 
   .myWorkTxtContainer {
