@@ -422,8 +422,8 @@ section:nth-child(odd) {
   .selectMoreRow {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
     width: 100%;
   }
 
