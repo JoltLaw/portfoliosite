@@ -417,6 +417,14 @@ section:nth-child(odd) {
     font-size: 3.12rem;
   }
 
+    .selectMoreRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+  }
+
   .skillBtn {
     font-size: 3.12rem;
   }
